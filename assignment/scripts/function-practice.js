@@ -64,13 +64,13 @@ console.log(getLast(arr));
 let arr2 = [1, 'dog', 27];
 function find( value, array ){
   let match = false;
-  for (let i = 0; i < arr2.length; i++){
+  for (let i = 0; i < array.length; i++){
     if (value === arr2[i]) {
       match = true;
     }
   } return match
 }
-console.log(find('dogg', arr2));
+console.log(find('dog', arr2));
 // ----------------------
 // Stretch Goals
 // ----------------------
@@ -100,8 +100,18 @@ sumAll(arr3);
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+let arr4 = [-2,0,12,-4,10,-2222, 10.234,99];
+let positiveArr = [];
+const posArr = (array) => {
+  for (let i = 0; i < array.length; i++){
+    if (array[i] >= 0) {
+      positiveArr.push(array[i]);
+    }
+  }
+}
+posArr(arr4);
+console.log(arr4)
+console.log(positiveArr);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
