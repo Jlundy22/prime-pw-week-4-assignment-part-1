@@ -101,17 +101,17 @@ sumAll(arr3);
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 let arr4 = [-2,0,12,-4,10,-2222, 10.234,99];
-let positiveArr = [];
+
 const posArr = (array) => {
+  let positiveArr = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i] >= 0) {
+    if (array[i] > 0) {
       positiveArr.push(array[i]);
     }
-  }
+  } return positiveArr
 }
-posArr(arr4);
+console.log(posArr(arr4));
 console.log(arr4)
-console.log(positiveArr);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
